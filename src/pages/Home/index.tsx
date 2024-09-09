@@ -14,7 +14,7 @@ export default function Home() {
     const handleConnect = async () => {
         setOpen(true);
 
-        const ws = new WebSocket("ws://localhost:8080");
+        const ws = new WebSocket("wss://mpongserver.onrender.com");
 
         ws.addEventListener("open", () => {
             setWebSocket(ws);     
